@@ -8,12 +8,12 @@ public class DodgemCarTest{
 
   @Before
   public void before() {
-    car = new DodgemCar();
+    car = new DodgemCar( 10 );
   }
 
   @Test
   public void driveDistanceReturnsTime(){
-    assertEquals( 100, car.driveDistance() );
+    assertEquals( 1, car.driveTime(10) );
   }
 
 }
