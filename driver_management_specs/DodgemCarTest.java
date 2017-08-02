@@ -12,8 +12,13 @@ public class DodgemCarTest{
   }
 
   @Test
-  public void driveDistanceReturnsTime(){
-    assertEquals( 1, car.driveTime(10) );
+  public void driveTimeReturnsTime(){
+    assertEquals( 1, car.driveTime( 10 ) );
+  }
+
+  @Test
+  public void checkHasTwoSeats(){
+    assertEquals( 2, car.getNumSeats() );
   }
 
 }
